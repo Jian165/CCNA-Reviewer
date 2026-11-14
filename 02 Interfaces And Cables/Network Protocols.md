@@ -42,4 +42,4 @@ If you try to connect a cable to a switch, but the cable maker and the switch ma
 ---
 
 ### 🔗 Related Notes
-[[Ethernet]] · [[Interfaces And Cables]] · [[Network]]
+[[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Bits and Bytes]] · [[Network]]

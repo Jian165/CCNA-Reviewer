@@ -16,7 +16,7 @@ aliases:
 
 - Cabling as defined by Ethernet standards
 - The rules and formats devices use to communicate on a LAN
-- Physical connectors, such as the [[Interfaces And Cables|RJ-45]]
+- Physical connectors, such as the [[UTP Cable|RJ-45]]
 
 > [!tip] Think of it as...
 > A rulebook for how data is framed, addressed, and sent across a local network.
@@ -31,4 +31,4 @@ aliases:
 ---
 
 ### 🔗 Related Notes
-[[Interfaces And Cables]] · [[Network Protocols]] · [[Bits and Bytes]] · [[Switches]]
+[[Interfaces And Cables]] · [[Network Protocols]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[Bits and Bytes]] · [[Switches]]

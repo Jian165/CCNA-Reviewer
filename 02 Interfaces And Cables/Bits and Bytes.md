@@ -114,4 +114,4 @@ Network speed is measured in **bits per second** — kilobits, megabits, gigabit
 ---
 
 ### 🔗 Related Notes
-[[Interfaces And Cables]] · [[Ethernet]] · [[Network Protocols]] · [[Network]]
+[[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Network Protocols]] · [[Network]]
