@@ -49,5 +49,8 @@ The big difference from 10BASE-T and 100BASE-T is that in 1000BASE-T and 10GBASE
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[10BASE-T, 100BASE-T]] · Up: [[Interfaces And Cables]] · Next → [[Straight-through cable]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[Straight-through cable]] · [[Auto MDIX]]

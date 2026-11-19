@@ -13,16 +13,33 @@ aliases:
 > [!abstract] Folder Overview
 > This folder covers the **building blocks of a network** — the devices that move, serve, and secure traffic — plus the client/server relationship that defines how services are requested and provided.
 
-## 📚 Notes in This Folder
+> [!tip] Start here — read top to bottom
+> Work through the stages below in order. Every note ends with a **🧭 Learning Path** link to the next one. When you finish this folder, continue to [[Interfaces And Cables]].
 
-| Note | What It Covers | Exam Focus |
-| --- | --- | --- |
-| [[Network]] | Nodes and client/server roles | A client **requests**; a server **provides** |
-| [[Router]] | Connects separate LANs | Forwards traffic **between** networks |
-| [[Switches]] | Connects hosts inside a LAN | Forwards traffic **within** a LAN |
-| [[Firewall]] | Filters traffic using rules | Placed **inside** or **outside** the network |
-| [[Server]] | Provides services to clients | Responds to requests |
-| [[Clients]] | Requests services from servers | Initiates the request |
+## 🧭 Learning Path
+
+| # | Stage | Note | What you'll learn |
+| --- | --- | --- | --- |
+| 1 | 🌱 Foundation | [[Network]] | What a network is and what nodes do |
+| 2 | 👥 Roles | [[Clients]] | The device that **requests** a service |
+| 3 | 👥 Roles | [[Server]] | The device that **provides** the service |
+| 4 | 🖧 Inside a LAN | [[Switches]] | How hosts in the **same** LAN connect |
+| 5 | 🌐 Between LANs | [[Router]] | How separate LANs reach each other |
+| 6 | 🛡️ Security | [[Firewall]] | How rules allow or deny traffic |
+| 7 | 🧪 Practice | [[Day 01 Lab - Packet Tracer Introduction.pkt]] | Build the topology yourself |
+| 8 | 📝 Check | [[Network Devices Exam]] | Test what you learned |
+
+## 🏗️ Knowledge Hierarchy
+
+```mermaid
+flowchart TD
+    A[1 Foundation<br/>Network and nodes] --> B[2 Roles<br/>Clients and Server]
+    B --> C[3 LAN<br/>Switch]
+    C --> D[4 Internet<br/>Router]
+    D --> E[5 Security<br/>Firewall]
+    E --> F[6 Practice then Exam<br/>Lab and self-test]
+    F --> G[Next folder<br/>Interfaces and Cables]
+```
 
 ## 🗺️ How the Pieces Fit Together
 
@@ -99,13 +116,13 @@ flowchart LR
 - [ ] I can name the two types of firewalls.
 - [ ] I can trace traffic from one LAN to another through routers and switches.
 
-## 📝 Practice Exam
-
-- [[Network Devices Exam]] — 30-mark self-test with answers
-
 ## 🧪 Lab
 
 - [[Day 01 Lab - Packet Tracer Introduction.pkt]]
+
+## 📝 Practice Exam
+
+- [[Network Devices Exam]] — 30-mark self-test with answers
 
 ---
 

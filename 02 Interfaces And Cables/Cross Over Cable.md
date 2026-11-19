@@ -67,5 +67,8 @@ The two pairs — **1&2** and **3&6** — are reversed on each end, so the wires
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Straight-through cable]] · Up: [[Interfaces And Cables]] · Next → [[Auto MDIX]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Straight-through cable]] · [[Auto MDIX]] · [[10BASE-T, 100BASE-T]] · [[UTP Cable]]

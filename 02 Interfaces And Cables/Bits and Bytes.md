@@ -87,31 +87,20 @@ Network speed is measured in **bits per second** — kilobits, megabits, gigabit
 > - Transmission is **one bit at a time** (serial), not one byte at a time.
 > - **1 GB = 8 Gb** — a gigabyte is 8× a gigabit.
 
-## 🧪 Test Yourself
-
-> [!question]- How many bits are in a byte?
-> **8 bits.**
-
-> [!question]- Why is a gigabyte 8× larger than a gigabit?
-> Because 1 byte = 8 bits, so **1 GB = 8 Gb**.
-
-> [!question]- What unit is network speed measured in?
-> **Bits per second** — Kbps, Mbps, Gbps, etc.
-
-> [!question]- Is data sent one bit or one byte at a time?
-> **One bit at a time** (serial transmission).
-
 ## ✅ Quick Recap
 
-| Question | Answer |
+| Topic | Fact |
 | --- | --- |
-| What is a bit? | A `0` or `1` |
-| How many bits in a byte? | 8 |
-| What unit is network speed measured in? | Bits per second |
-| How is data sent on a wire? | One bit at a time |
-| Is 1 GB larger or smaller than 1 Gb? | 8× larger |
+| **Bit** | A `0` or `1` |
+| **Byte** | 8 bits |
+| Network **speed unit** | Bits per second (Kbps, Mbps, Gbps) |
+| **Transmission** | One bit at a time (serial) |
+| **1 GB vs 1 Gb** | A gigabyte is **8× larger** (1 byte = 8 bits) |
 
 ---
+
+### 🧭 Learning Path
+← Previous: [[Firewall]] · Up: [[Interfaces And Cables]] · Next → [[Network Protocols]]
 
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Network Protocols]] · [[Network]]

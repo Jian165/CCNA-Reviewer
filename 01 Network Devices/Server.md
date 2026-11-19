@@ -27,5 +27,8 @@ aliases:
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Clients]] · Up: [[Network Devices]] · Next → [[Switches]]
+
 ### 🔗 Related Notes
 [[Network]] · [[Clients]] · [[Firewall]] · [[Switches]]

@@ -30,5 +30,8 @@ aliases:
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Network]] · Up: [[Network Devices]] · Next → [[Server]]
+
 ### 🔗 Related Notes
 [[Network]] · [[Server]] · [[Router]] · [[Switches]]

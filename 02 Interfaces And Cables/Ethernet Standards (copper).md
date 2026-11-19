@@ -47,18 +47,21 @@ There is one standard for each of the common copper cable speeds:
 
 ## 🧠 Quick Recap
 
-| Question | Answer |
+| Topic | Fact |
 | --- | --- |
-| Which IEEE standard defines Ethernet? | **802.3** |
-| In what year was it defined? | **1983** |
-| What do the numbers mean? | The **speed** |
-| What does **BASE** mean? | **Baseband** signalling |
-| What does **T** mean? | **Twisted pair** |
+| **IEEE standard** | **802.3** |
+| **Year defined** | **1983** |
+| **Numbers** in the name | The **speed** |
+| **BASE** | **Baseband** signalling |
+| **T** | **Twisted pair** |
 
 > [!success] Key takeaway
 > All copper Ethernet standards share the **IEEE 802.3** family name; only the **speed** and **wiring requirements** change.
 
 ---
+
+### 🧭 Learning Path
+← Previous: [[Ethernet]] · Up: [[Interfaces And Cables]] · Next → [[UTP Cable]]
 
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Network Protocols]]

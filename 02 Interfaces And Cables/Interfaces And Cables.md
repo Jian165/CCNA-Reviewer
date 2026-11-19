@@ -15,20 +15,40 @@ aliases:
 > [!abstract] Folder Overview
 > This folder covers how devices physically connect — the **interfaces (ports)**, **copper cabling standards**, and **pin wiring** that let Ethernet equipment from different vendors interoperate.
 
-## 📚 Notes in This Folder
+> [!tip] Start here — read top to bottom
+> Finish [[Network Devices]] first. Work through the stages below in order — every note ends with a **🧭 Learning Path** link to the next one. When you finish this folder, continue to [[TCP IP]].
 
-| Note | What It Covers | Exam Focus |
-| --- | --- | --- |
-| [[Bits and Bytes]] | Bits vs bytes and serial transmission | **1 byte = 8 bits**; speed is in **bits/s** |
-| [[Network Protocols]] | Why agreed-upon standards matter | **Physical** vs **logical** standards |
-| [[Ethernet]] | Collection of protocols and standards | Ethernet is a **family**, not one protocol |
-| [[Ethernet Standards (copper)]] | IEEE 802.3 copper standards | **10/100/1000/10G**; **BASE-T** |
-| [[UTP Cable]] | Unshielded twisted pair and RJ-45 | **4 pairs = 8 wires**; twist fights **EMI** |
-| [[10BASE-T, 100BASE-T]] | 10/100 Mbps pin usage | **2 pairs** — pins **1&2**, **3&6** |
-| [[1000BASE -T, 10GBASE-T]] | 1/10 Gbps pin usage | **All 4 pairs**, each **bidirectional** |
-| [[Straight-through cable]] | Pin 1 to pin 1 wiring | Connects **unlike** devices |
-| [[Cross Over Cable]] | Reversed pin pairs | Connects **like** devices |
-| [[Auto MDIX]] | Automatic pin detection | Modern gear needs **no crossover** |
+## 🧭 Learning Path
+
+| # | Stage | Note | What you'll learn |
+| --- | --- | --- | --- |
+| 1 | 🌱 Basics | [[Bits and Bytes]] | Bits, bytes, and speed units |
+| 2 | 🌱 Basics | [[Network Protocols]] | Why standards and protocols matter |
+| 3 | 🌱 Basics | [[Ethernet]] | Ethernet is a **family** of standards |
+| 4 | ⚡ Standards | [[Ethernet Standards (copper)]] | IEEE **802.3** and **BASE-T** names |
+| 5 | 🔌 Copper media | [[UTP Cable]] | 4 twisted pairs and the RJ-45 |
+| 6 | 📌 Pin usage | [[10BASE-T, 100BASE-T]] | **2 pairs** — pins **1&2** and **3&6** |
+| 7 | 📌 Pin usage | [[1000BASE -T, 10GBASE-T]] | **All 4 pairs**, each bidirectional |
+| 8 | 🔀 Wiring | [[Straight-through cable]] | Connects **unlike** devices |
+| 9 | 🔀 Wiring | [[Cross Over Cable]] | Connects **like** devices |
+| 10 | 🔀 Wiring | [[Auto MDIX]] | Automatic pin correction |
+| 11 | 💡 Fiber media | [[Fiber Optic Connections]] | SFPs, light over glass, Tx/Rx strands |
+| 12 | 💡 Fiber media | [[Multimode Fiber]] | Wider core, LED, multiple modes |
+| 13 | 💡 Fiber media | [[Single-Mode Fiber]] | Narrow core, laser, longest reach |
+| 14 | 🧪 Practice | [[Day 02 Lab - Connecting Devices.pkt]] | Build the cabling yourself |
+| 15 | 📝 Check | [[Interfaces And Cables Exam]] | Test what you learned |
+
+## 🏗️ Knowledge Hierarchy
+
+```mermaid
+flowchart TD
+    A[1 to 3 Foundations<br/>bits, standards, Ethernet] --> B[4 to 5 Copper media<br/>802.3 and UTP]
+    B --> C[6 to 7 Pin usage<br/>2 pairs vs 4 pairs]
+    C --> D[8 to 10 Cable wiring<br/>straight, crossover, auto]
+    D --> E[11 to 13 Fiber optics<br/>SFP, multimode, single-mode]
+    E --> F[14 Practice then 15 Exam<br/>Lab and self-test]
+    F --> G[Next folder<br/>TCP/IP]
+```
 
 ## 🗺️ How the Pieces Fit Together
 
@@ -75,6 +95,8 @@ flowchart LR
 > - Ethernet is **full-duplex** — devices send and receive at the same time.
 > - A **straight-through** cable connects **unlike** devices; a **crossover** connects **like** devices.
 > - **Auto MDI-X** detects the neighbor's pins and adjusts automatically.
+> - **Fiber-optic** cables carry **light over glass** via **SFPs**, using separate **transmit and receive** strands.
+> - **Multimode** fiber has a **wider core** and **LED** transmitters; **single-mode** has a **narrow core** and **laser** transmitters for the longest distances.
 
 ## ⚖️ Copper Ethernet Standards
 
@@ -112,6 +134,12 @@ flowchart LR
 - [ ] I can explain why a straight-through cable works for PC-to-switch.
 - [ ] I can explain why two switches need a crossover cable (or Auto MDI-X).
 - [ ] I can describe what Auto MDI-X does.
+- [ ] I can explain how fiber-optic cables carry light and why Tx/Rx strands are separate.
+- [ ] I can compare multimode and single-mode fiber (core, transmitter, distance, cost).
+
+## 🧪 Lab
+
+- [[Day 02 Lab - Connecting Devices.pkt]]
 
 ## 📝 Practice Exam
 
@@ -120,4 +148,4 @@ flowchart LR
 ---
 
 ### 🔗 Related Notes
-[[Network Devices]] · [[Network]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]] · [[Cross Over Cable]] · [[Auto MDIX]]
+[[Network Devices]] · [[Network]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]] · [[Cross Over Cable]] · [[Auto MDIX]] · [[Fiber Optic Connections]] · [[Multimode Fiber]] · [[Single-Mode Fiber]]

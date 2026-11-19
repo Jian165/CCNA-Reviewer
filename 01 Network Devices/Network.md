@@ -33,11 +33,11 @@ A network is built from these core devices:
 
 ![[Pasted image 20261111134936.png]]
 
-Watch the exchange between the two PCs and think about which one is the server and which one is the client. PC1 asks PC2 for the file `image.jpg`, and PC2 responds by sending the requested image.
+In this exchange, PC1 asks PC2 for the file `image.jpg`, and PC2 responds by sending the requested image. **PC1 is the client** — it requests the service. **PC2 is the server** — it provides the service.
 
-> [!question] Who is who?
-> **PC1** is the client — it requests the service.
-> **PC2** is the server — it provides the service.
+> [!info] Roles in this exchange
+> - **PC1** is the client — it requests the service.
+> - **PC2** is the server — it provides the service.
 
 | Role | Responsibility |
 | --- | --- |
@@ -48,6 +48,9 @@ Watch the exchange between the two PCs and think about which one is the server a
 > Client and server are **roles**, not fixed device types. The same device can be a client in one exchange and a server in another.
 
 ---
+
+### 🧭 Learning Path
+Up: [[Network Devices]] · Next → [[Clients]]
 
 ### 🔗 Related Notes
 [[Router]] · [[Switches]] · [[Firewall]] · [[Server]] · [[Clients]] · [[Interfaces And Cables]]

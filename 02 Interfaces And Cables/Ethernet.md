@@ -30,5 +30,8 @@ aliases:
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Network Protocols]] · Up: [[Interfaces And Cables]] · Next → [[Ethernet Standards (copper)]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Network Protocols]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[Bits and Bytes]] · [[Switches]]

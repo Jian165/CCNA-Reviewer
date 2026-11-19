@@ -41,5 +41,8 @@ If you try to connect a cable to a switch, but the cable maker and the switch ma
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Bits and Bytes]] · Up: [[Interfaces And Cables]] · Next → [[Ethernet]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Bits and Bytes]] · [[Network]]

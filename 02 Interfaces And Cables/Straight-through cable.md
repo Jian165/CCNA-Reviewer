@@ -53,5 +53,8 @@ Because the two device types transmit and receive on **opposite pin pairs**, a s
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[1000BASE -T, 10GBASE-T]] · Up: [[Interfaces And Cables]] · Next → [[Cross Over Cable]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[10BASE-T, 100BASE-T]] · [[Cross Over Cable]] · [[Auto MDIX]] · [[UTP Cable]]

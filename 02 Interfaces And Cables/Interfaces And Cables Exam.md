@@ -223,8 +223,14 @@ Two **switches** are connected with a **straight-through** cable on older equipm
 - [[Straight-through cable]] — unlike devices
 - [[Cross Over Cable]] — like devices
 - [[Auto MDIX]] — automatic pin correction
+- [[Fiber Optic Connections]] — SFPs, light over glass, Tx/Rx strands
+- [[Multimode Fiber]] — wider core, LED, multiple modes
+- [[Single-Mode Fiber]] — narrow core, laser, longest distances
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Day 02 Lab - Connecting Devices.pkt]] · Up: [[Interfaces And Cables]] · Next → [[TCP IP]]
+
 ### 🔗 Related Notes
-[[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]] · [[Cross Over Cable]] · [[Auto MDIX]]
+[[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]] · [[Cross Over Cable]] · [[Auto MDIX]] · [[Fiber Optic Connections]] · [[Multimode Fiber]] · [[Single-Mode Fiber]]

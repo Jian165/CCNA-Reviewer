@@ -49,5 +49,8 @@ The **RJ-45** connector has **8 pins** — one for each of the **8 wires** in a 
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Ethernet Standards (copper)]] · Up: [[Interfaces And Cables]] · Next → [[10BASE-T, 100BASE-T]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]]

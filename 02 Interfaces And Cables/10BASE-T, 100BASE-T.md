@@ -59,5 +59,8 @@ In a UTP cable these pairs are **twisted together**, so the wires drawn straight
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[UTP Cable]] · Up: [[Interfaces And Cables]] · Next → [[1000BASE -T, 10GBASE-T]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Ethernet Standards (copper)]] · [[UTP Cable]] · [[1000BASE -T, 10GBASE-T]] · [[Straight-through cable]] · [[Cross Over Cable]]

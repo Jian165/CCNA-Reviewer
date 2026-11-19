@@ -40,5 +40,8 @@ When end hosts in the **New York Branch LAN** want to communicate with end hosts
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Switches]] · Up: [[Network Devices]] · Next → [[Firewall]]
+
 ### 🔗 Related Notes
 [[Network]] · [[Switches]] · [[Firewall]] · [[Interfaces And Cables]]

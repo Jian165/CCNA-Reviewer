@@ -220,13 +220,16 @@ PC1 in the **New York Branch** wants to download a file from SRV1 in the **Tokyo
 ## 🔁 Review These Notes
 
 - [[Network]] — nodes and client/server roles
-- [[Router]] — connecting separate LANs
-- [[Switches]] — forwarding within a LAN
-- [[Firewall]] — rules, placement, and types
-- [[Server]] — providing services
 - [[Clients]] — requesting services
+- [[Server]] — providing services
+- [[Switches]] — forwarding within a LAN
+- [[Router]] — connecting separate LANs
+- [[Firewall]] — rules, placement, and types
 
 ---
+
+### 🧭 Learning Path
+← Previous: [[Day 01 Lab - Packet Tracer Introduction.pkt]] · Up: [[Network Devices]] · Next → [[Interfaces And Cables]]
 
 ### 🔗 Related Notes
 [[Network Devices]] · [[Network]] · [[Router]] · [[Switches]] · [[Firewall]] · [[Server]] · [[Clients]]

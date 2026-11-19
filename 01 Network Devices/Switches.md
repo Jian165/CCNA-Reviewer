@@ -43,5 +43,8 @@ PC1 and PC2, plus other devices plugged into SW1 (such as a network printer or a
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Server]] · Up: [[Network Devices]] · Next → [[Router]]
+
 ### 🔗 Related Notes
 [[Network]] · [[Router]] · [[Firewall]] · [[Interfaces And Cables]]

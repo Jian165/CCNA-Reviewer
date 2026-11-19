@@ -44,5 +44,8 @@ Firewalls must be configured with **security rules** that determine which traffi
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Router]] · Up: [[Network Devices]] · Next → [[Day 01 Lab - Packet Tracer Introduction.pkt]]
+
 ### 🔗 Related Notes
 [[Network]] · [[Router]] · [[Switches]] · [[Server]]

@@ -42,5 +42,8 @@ Auto MDI-X lets devices:
 
 ---
 
+### 🧭 Learning Path
+← Previous: [[Cross Over Cable]] · Up: [[Interfaces And Cables]] · Next → [[Fiber Optic Connections]]
+
 ### 🔗 Related Notes
 [[Interfaces And Cables]] · [[Straight-through cable]] · [[Cross Over Cable]] · [[10BASE-T, 100BASE-T]] · [[1000BASE -T, 10GBASE-T]]
