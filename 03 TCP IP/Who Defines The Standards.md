@@ -73,7 +73,7 @@ The **IETF** is an **open community** that defines many of the protocols used on
 ---
 
 ### 🧭 Learning Path
-← Previous: [[History]] · Up: [[TCP IP]] · Next → [[TCP IP Exam]]
+← Previous: [[History]] · Up: [[TCP IP]] · Next → [[Layered models]]
 
 ### 🔗 Related Notes
-[[TCP IP]] · [[Standards And Protocols]] · [[History]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Network Protocols]]
+[[TCP IP]] · [[Standards And Protocols]] · [[History]] · [[Layered models]] · [[Ethernet]] · [[Ethernet Standards (copper)]] · [[Network Protocols]]
