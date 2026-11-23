@@ -270,7 +270,7 @@ A web browser on **PC1** requests a web page from **SRV1**. The path includes sw
 ---
 
 ### 🧭 Learning Path
-← Previous: [[Day 03 Lab - OSI Model.pkt]] · Up: [[TCP IP]]
+← Previous: [[Day 03 Lab - OSI Model.pkt]] · Up: [[TCP IP]] · Next → [[Intro To The CLI]]
 
 ### 🔗 Related Notes
 [[TCP IP]] · [[Standards And Protocols]] · [[History]] · [[Who Defines The Standards]] · [[Layered models]] · [[The TCP IP Model]] · [[Layer 4 Transport Layer]] · [[Local 3 Internet Layer]] · [[Local 2 Network Layer]] · [[Encapsulation & decapsulation]] · [[OSI Model]]

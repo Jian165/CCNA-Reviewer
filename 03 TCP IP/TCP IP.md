@@ -16,7 +16,7 @@ aliases:
 > This folder covers the **rules, history, organizations, and layered model** behind internetworking — why protocols and standards are needed, how TCP/IP grew, and how a message moves from an application to another host.
 
 > [!tip] Start here — read top to bottom
-> Finish [[Interfaces And Cables]] first. Work through the stages below in order — every note ends with a **🧭 Learning Path** link to the next one.
+> Finish [[Interfaces And Cables]] first. Work through the stages below in order — every note ends with a **🧭 Learning Path** link to the next one. When you finish this folder, continue to [[Intro To The CLI]].
 
 ## 🧭 Learning Path
 
@@ -51,6 +51,7 @@ flowchart TD
     C --> D[12 to 15 Layer cooperation<br/>separation, services, peers, encapsulation]
     D --> E[16 to 17 Model names<br/>OSI and other models]
     E --> F[18 to 19 Practice then exam<br/>lab and self-test]
+    F --> G[Next folder<br/>Intro to the CLI]
 ```
 
 ## 🗺️ How the Pieces Fit Together
