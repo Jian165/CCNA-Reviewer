@@ -1,60 +1,129 @@
+---
+tags:
+  - ccna
+  - networking
+  - ethernet
+  - switching
+  - mac
+aliases:
+  - MAC Learning and Flooding
+  - Two-Switch Switching Example
+  - Frame Flooding and Forwarding Process
+---
+
+# 🔄 MAC Learning, Flooding and Forwarding — Two-Switch Example
+
+> [!abstract] In one line
+> This full walkthrough shows two switches with **empty MAC tables** learning from **source MACs**, flooding an **unknown unicast**, and then forwarding the reply as a **known unicast**.
+
 ![[Pasted image 20261125153415.png]]
 
-Let’s look at another example, this time with two switches. Notice the MAC address table of each switch.  
-Currently they are empty, so once again we will see the process of MAC address learning and flooding.  
-So, PC1 wants to send some information to PC3.  
-The source MAC address of the packet is aaaa.aa00.0001, and the destination is aaaa.aa00.0003.  
-So, PC1 sends the frame out of its network interface and it arrives at SW1.  
-SW1 learns PC1’s MAC address from the source address field of the frame, and associates it with the interface on which it was received, F0/1.  
-I’ll just say once more, I’m only writing a short version of the MAC address due to the lack of space here, really the frame and the MAC address table would include the whole MAC address, of course.
+## 🧭 Starting State and Goal
+
+- **Two switches**, SW1 and SW2.
+- Both MAC address tables are **empty**.
+- **PC1 wants to send information to PC3.**
+
+| Frame field | Value |
+| --- | --- |
+| **Source MAC** | `aaaa.aa00.0001` (PC1) |
+| **Destination MAC** | `aaaa.aa00.0003` (PC3) |
+
+> [!info] Abbreviated addresses
+> Only short forms of the MAC addresses are written in the diagrams to save space. Real frames and real MAC address tables contain the **full 48-bit addresses**.
+
+## 1️⃣ PC1 Sends the Frame
+
+PC1 sends the frame out of its network interface; it arrives at **SW1** on **F0/1**.
+
+## 2️⃣ SW1 Learns PC1
+
+SW1 reads the **source MAC** field and associates `aaaa.aa00.0001` with the interface where the frame arrived: **F0/1**.
 
 ![[Pasted image 20261125153446.png]]
 
-Once again, a MAC address learned in this way is called a ‘dynamically learned MAC address, or more often, a ‘dynamic’ mac address.
+> [!important] Dynamic MAC
+> This is a **dynamically learned MAC address**, usually just called a **dynamic MAC**. It was learned from an arriving frame's **source** field.
+
+## 3️⃣ SW1 Floods the Unknown Unicast
+
+SW1 knows PC1 is on F0/1, but it still does **not** know where PC3 is. Therefore this is an **unknown unicast frame**.
+
+- Flood out **all ports except F0/1**.
+- In this diagram: **F0/2 and F0/3**.
+- **PC2 drops** the frame because the destination MAC does not match its own.
 
 ![[Pasted image 20261125153520.png]]
 
-Now, SW1 has learned that PC1 can be reached via it’s F0/1 interface, but it still doesn’t know where PC3 is.  
-Do you remember the name for this kind of frame? It’s called an ‘unknown unicast frame’.  
-And what does a switch do with an unknown unicast frame? It floods it out all of its ports, except the one it was received on.  
-In this case it will flood the frame out of F0/2 and F0/3, but not F0/1, because it received the frame on F0/1.  
-PC2 drops the frame because the destination MAC Address doesn’t match its own MAC address. Now, what will SW2 do?  
-Well, the exact same rules apply.  
-Just like SW1 did, it uses the source MAC address field of the frame to dynamically learn PC1’s MAC address and the interface it can use to reach PC1.
+## 4️⃣ SW2 Learns and Floods
+
+The frame reaches **SW2 on F0/3**. The exact same rules apply:
+
+1. SW2 uses the **source MAC** to dynamically learn that PC1 is reachable via **F0/3**.
+2. SW2 still does not know the destination PC3, so the frame is an **unknown unicast**.
+3. It arrived on F0/3, so SW2 floods it out **F0/1 and F0/2**, but **not F0/3**.
+4. **PC4 drops** the frame; **PC3 accepts** it because the destination MAC matches its own.
 
 ![[Pasted image 20261125153632.png]]
 
-That’s the meaning of the interface in the MAC address table, it doesn’t mean the device is directly connected to this interface.  
-Now, SW2 received a unicast frame, that is a frame destined for a single device, but it doesn’t know how to reach that device, because its not in its MAC address table.  
-One last time, what is this kind of frame called? It’s an unknown unicast frame. And what does the switch do with it?
-
 ![[Pasted image 20261125160544.png]]
 
+> [!warning] Interface ≠ direct connection
+> An interface in the MAC address table means **"reachable via this interface."** It does **not** mean the device is directly plugged into that port. SW2 reaches PC1 through F0/3 because that port leads toward SW1.
 
-Well, it received the frame on F0/3, so it won’t be flooded out of that interface, but it will be sent out of all other interfaces, F0/1 and F0/2 in this case.  
-PC4 drops the frame because the destination MAC address doesn’t match its own.  
-PC3, however, receives the frame, as the destination MAC address matches its own MAC address.  
-Let’s say that PC3 is going to send a reply back to PC1.  
+## 5️⃣ PC3 Replies to PC1
+
+PC3 sends a reply back to PC1. Notice that the **destination and source MAC fields are reversed**:
+
+| Field | Reply value |
+| --- | --- |
+| **Source MAC** | PC3 |
+| **Destination MAC** | PC1 |
+
+SW2 receives the reply and learns PC3's MAC address with its corresponding interface.
 
 ![[Pasted image 20261125160753.png]]
 
-Notice the destination and source MAC address fields of the frame are reversed. PC3 sends the frame out of its network interface, and it is received by SW2.  
-SW2 learns PC3’s MAC address, and enters the MAC address and the corresponding interface in its MAC address table.  
+> [!important] Why learning always uses the source
+> If a frame from source X arrives on a port, the switch knows X can be reached via that port. That is why the switch fills the table from the **SOURCE MAC ADDRESS** field.
+
+## 6️⃣ SW2 Forwards as a Known Unicast
+
+SW2 already has an entry for the destination `aaaa.aa00.0001` (PC1), so there is **no need to flood**.
+
+- The frame is forwarded normally out **F0/3**, the interface mapped to PC1.
 
 ![[Pasted image 20261125160854.png]]
 
-Just so we’re clear, the switch uses the SOURCE MAC ADDRESS field to fill its MAC address table because, if it receives a frame from that source on the interface, it knows that it can reach that MAC address via that interface.
+## 7️⃣ SW1 Learns PC3 and Forwards to PC1
 
-So, lets continue.  
-SW2 already has an entry for the destination MAC Address, aaaa.aa00.0001, in its MAC address table, so there is no need to flood the frame.  
-Instead, it is forwarded normally out of the corresponding interface in the MAC address table, which is F0/3.  
+SW1 receives the frame and adds an entry for **PC3's MAC** with interface **F0/3**, because that is where the frame arrived.
+
+SW1 already has an entry for the destination PC1, so it forwards the frame out that corresponding interface. The frame reaches **PC1**.
 
 ![[Pasted image 20261125161045.png]]
 
-The frame is received by SW1, which adds an entry for PC3’s MAC address in its MAC address table, with the interface F0/3, since that’s where it received the frame.  
-Finally, since SW1 already has an entry for the destination MAC address in its own MAC address table, SW1 forwards the frame out of the corresponding interface, and it reaches its destination, PC1.  
+## 🧠 Quick Recap
 
-Okay, so that was a lot of information. I was actually planning to cover the Ethernet LAN switching topics in a single video, but I’ve decided to split it up into two videos.
-
+| Step | Switch action | Rule demonstrated |
+| --- | --- | --- |
+| 1 | PC1 → SW1 | Unicast frame has one destination |
+| 2 | SW1 learns PC1 on F0/1 | Learn from **source MAC** |
+| 3 | SW1 floods out F0/2, F0/3 | Unknown unicast floods all other ports |
+| 4 | SW2 learns PC1 on F0/3, then floods | Same rules on every switch |
+| 5 | PC3 replies; source/destination reversed | Reply swaps MAC fields |
+| 6 | SW2 forwards out F0/3 | Known unicast uses the table |
+| 7 | SW1 learns PC3 on F0/3, forwards to PC1 | Learning happens in both directions |
 
 ![[Pasted image 20261125161131.png]]
+
+> [!success] Key takeaway
+> Every switch independently learns from **source MACs** and looks up **destination MACs**. Unknown destinations are **flooded**; known destinations are **forwarded**. After the reply, both switches have learned both PCs.
+
+---
+
+### 🧭 Learning Path
+← Previous: [[Known Unicast Forwarding]] · Up: [[Ethernet LAN Switching]] · Next → [[Ethernet LAN Switching Exam]]
+
+### 🔗 Related Notes
+[[Ethernet LAN Switching]] · [[Ethernet Frame]] · [[CCNA/05 Ethernet LAN Switching  1/MAC Address Table]] · [[Unknown Unicast Flooding]] · [[Known Unicast Forwarding]] · [[Local Area Networks]]

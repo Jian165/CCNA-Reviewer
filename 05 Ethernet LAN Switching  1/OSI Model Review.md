@@ -1,20 +1,92 @@
-## Physical Layer
+---
+tags:
+  - ccna
+  - networking
+  - osi
+  - layers
+  - ethernet
+  - switching
+aliases:
+  - OSI Model Review
+  - Layer 1 and Layer 2 Review
+  - Data Link Layer Review
+---
 
+# 🧭 OSI Model Review for Ethernet Switching
+
+> [!abstract] In one line
+> Ethernet switching uses **Layer 1 signals** and **Layer 2 frames**: Layer 1 sends bits over the medium, and Layer 2 provides node-to-node delivery using MAC addresses.
+
+## ⚡ Physical Layer — Layer 1
 
 ![[Pasted image 20261125144253.png]]
 
-First let’s review. This is a slide from Day 3’s video of describing the physical layer of the OSI model. The physical layer defines physical characteristics of the medium used to transfer data between devices.For example, voltage levels, maximum transmission distances (like Ethernet UTP cables’ 100 meter limit), physical connectors, cable specifications, etc.Digital bits are converted into electrical (for wired connections) or radio (for wireless connections) signals. All of the information in Day 2’s video (cables, pin layouts, etc.) is related to the Physical Layer.So, we’ve covered a good amount about the physical layer, learning about copper UTP cables, fiber-optic cables, RJ45 connectors, etc.
+The **Physical Layer** defines the physical characteristics of the medium used to transfer data between devices:
 
-## Data Link Layer
+- **Voltage levels**
+- **Maximum transmission distances** — for example, Ethernet UTP cable's **100-meter limit**
+- **Physical connectors**
+- **Cable specifications**
+
+It converts **digital bits** into:
+
+- **Electrical signals** for wired connections
+- **Radio signals** for wireless connections
+
+Everything from the cabling lesson — copper UTP, fiber-optic cable, RJ-45 connectors, pin layouts — belongs to Layer 1.
+
+## 🔗 Data Link Layer — Layer 2
 
 ![[Pasted image 20261125144425.png]]
 
-Let’s also review this slide about Layer 2, the data link layer, from Day 3’s video. Layer 2 provides node-to-node connectivity and data transfer, for example PC to switch, or switch to router, or router to router, etc. It defines how data is formatted for transmission over a physical medium (for example, copper UTP cables). IT detects and possibly corrects Physical Layer errors. It uses Layer 2 addressing, which is separate from Layer 3 addressing. Remember, IP addresses are Layer 3 addresses, not Layer 2. Switches operate at Layer 2. So, in this video we’ll be talking about Ethernet LAN switching, and Ethernet involves Layer 1 and Layer 2 of the OSI model. Since we’ve already covered the Layer 1 Ethernet standards like UTP cables, this video will be about Layer 2. Then, as we continue with this series, we’ll move up the layers of the OSI model, until you get a complete image of how data is sent and received over networks.
+Layer 2 provides **node-to-node connectivity and data transfer**, such as:
 
-## PDUs 
+- PC → switch
+- Switch → router
+- Router → router
+
+It also:
+
+- Defines how data is formatted for transmission over the physical medium
+- Detects and possibly corrects Physical Layer errors
+- Uses **Layer 2 addressing**, which is separate from Layer 3 addressing
+
+> [!warning] IP is Layer 3, not Layer 2
+> **IP addresses are Layer 3 addresses.** MAC addresses are Layer 2 addresses. Do not mix them up.
+
+**Switches operate at Layer 2.** Ethernet involves both Layer 1 and Layer 2; since the Layer 1 Ethernet standards were covered earlier, this folder focuses on **Layer 2 Ethernet switching**.
+
+## 📦 PDUs and Encapsulation
 
 ![[Pasted image 20261125145015.png]]
 
-This shows the encapsulation process as data is prepared to be sent over a network.At the top, the data prepared by the upper layers of the OSI model is simply called data.A layer 4 header is added, and this combination of data and layer 4 header is called a segment. A layer 3 header is added to the segment, and it is now called a packet.  Finally, a Layer 2 header and trailer are added to the packet, and it becomes a frame. Once again, these different stages of preparing data to be forwarded are called ‘protocol data units, or PDUs. For example, the Layer 2 PDU is a frame. Today we’re going to focus on how switches receive and forward frames, specifically Ethernet frames, since it’s the Layer 2 protocol used in virtually every LAN in existence today. Let’s take a look at the actual contents of this Ethernet header and trailer. So, here’s an Ethernet frame, encapsulating the packet with a header and trailer.
+As data is prepared to be sent over a network, each layer adds its own information. Each stage is a **PDU — Protocol Data Unit**.
 
+| Stage | PDU name | What was added |
+| --- | --- | --- |
+| Upper-layer data | **Data** | Nothing yet |
+| Add Layer 4 header | **Segment** | Layer 4 header |
+| Add Layer 3 header | **Packet** | Layer 3 header |
+| Add Layer 2 header and trailer | **Frame** | Layer 2 header + trailer |
 
+> [!important] Exam point
+> The **Layer 2 PDU is a frame**. This folder focuses on how switches receive and forward **Ethernet frames**, the Layer 2 framing used in virtually every LAN today.
+
+The reverse process on the receiving device is **decapsulation**, which removes the headers and trailers as the message moves up the OSI stack.
+
+## 🎯 Why This Review Matters
+
+- The course continues upward through the layers until the full path from application to network is clear.
+- Layer 1 was already covered with UTP, fiber, and RJ-45.
+- Now the focus is Layer 2: how Ethernet frames are built and how switches forward them.
+
+> [!success] Key takeaway
+> Layer 1 turns bits into signals; Layer 2 packages those bits into **frames** with MAC addresses. Switches work at Layer 2, and the frame is the PDU they forward.
+
+---
+
+### 🧭 Learning Path
+← Previous: [[Local Area Networks]] · Up: [[Ethernet LAN Switching]] · Next → [[Ethernet Frame]]
+
+### 🔗 Related Notes
+[[Ethernet LAN Switching]] · [[Local Area Networks]] · [[Ethernet Frame]] · [[OSI Model]] · [[Local 2 Network Layer]] · [[Layer 1 Physical Layer]] · [[Encapsulation & decapsulation]]

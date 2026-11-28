@@ -230,7 +230,7 @@ You set `enable password CCNA`, save the configuration, and then view `show star
 ---
 
 ### 🧭 Learning Path
-← Previous: [[Day 04 Lab - Basic Device Security.pkt]] · Up: [[Intro To The CLI]]
+← Previous: [[Day 04 Lab - Basic Device Security.pkt]] · Up: [[Intro To The CLI]] · Next → [[Ethernet LAN Switching]]
 
 ### 🔗 Related Notes
-[[Intro To The CLI]] · [[CLI]] · [[Console Port]] · [[Privileged EXEC Mode]] · [[Global Configuration Mode]] · [[Enable Password]] · [[Saving Configuration]] · [[Service Password Encryption]] · [[Enable Secret Command]]
+[[Intro To The CLI]] · [[CLI]] · [[Console Port]] · [[Privileged EXEC Mode]] · [[Global Configuration Mode]] · [[Enable Password]] · [[Saving Configuration]] · [[Service Password Encryption]] · [[Enable Secret Command]] · [[Ethernet LAN Switching]]
